@@ -148,6 +148,12 @@ header nav ul li:not(:last-child) {
 	text-align: center;
 }
 
+@media (max-width: 767px) {
+	.landing h1 {
+		font-size: 2rem;
+	}
+}
+
 .landing h1 span {
 	color: var(--main-color);
 }
@@ -161,6 +167,12 @@ header nav ul li:not(:last-child) {
 .landing .btns {
 	display: flex;
 	gap: 20px;
+}
+
+@media (max-width: 767px) {
+	.landing .btns {
+		flex-direction: column;
+	}
 }
 
 .landing .btns button {
@@ -298,6 +310,13 @@ header nav ul li:not(:last-child) {
 	padding: 0 100px;
 }
 
+@media (max-width: 767px) {
+	.subscribe .container form {
+		padding: 0;
+		flex-direction: column;
+	}
+}
+
 .subscribe .container form input {
 	flex: 2;
 	padding: 15px;
@@ -313,6 +332,14 @@ header nav ul li:not(:last-child) {
 	text-transform: uppercase;
 	background-color: var(--main-color);
 	transition: var(--transition);
+}
+
+@media (max-width: 767px) {
+	.subscribe form button {
+		width: fit-content;
+		margin: 0 auto;
+		padding: 10px 20px;
+	}
 }
 
 .subscribe .container form button:hover {
@@ -584,6 +611,12 @@ header nav ul li:not(:last-child) {
 	width: 100%;
 }
 
+@media (max-width: 767px) {
+	.contact form > div {
+		flex-direction: column;
+	}
+}
+
 .contact form input,
 .contact form textarea {
 	border-radius: 10px;
@@ -607,6 +640,12 @@ header nav ul li:not(:last-child) {
 	transition: var(--transition);
 }
 
+@media (max-width: 767px) {
+	.contact form button {
+		margin: 0 auto;
+	}
+}
+
 .contact form button:hover {
 	background-color: white;
 	color: var(--main-color);
@@ -616,6 +655,14 @@ header nav ul li:not(:last-child) {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+}
+
+@media (max-width: 767px) {
+	.contact form .links {
+		bottom: -70px;
+		right: 50%;
+		transform: translateX(50%);
+	}
 }
 
 .contact form .links li {
@@ -634,6 +681,12 @@ footer .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+	footer .container {
+		flex-direction: column;
+	}
 }
 
 footer span {
